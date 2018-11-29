@@ -49,6 +49,17 @@ hunter_add_version(
     PACKAGE_NAME
     OpenCV
     VERSION
+    "rrb-3.4.0-p1"
+    URL
+    "https://github.com/jdonald/opencv/archive/rrb-3.4.0-p1.zip"
+    SHA1
+    613835b06d77f31a05471db8246bd9108c0ff079
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    OpenCV
+    VERSION
     "3.4.0-p0"
     URL
     "https://github.com/hunter-packages/opencv/archive/v3.4.0-p0.tar.gz"
