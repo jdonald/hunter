@@ -53,7 +53,7 @@ hunter_add_version(
     URL
     "https://github.com/jdonald/opencv/archive/hunter-3.4.4.zip"
     SHA1
-    ef52f9cf732516fb9dfcfa45e69176b083db4df6
+    bc038b7051c83c7a9002aae991c1358e14c7a7cc
 )
 
 hunter_add_version(
