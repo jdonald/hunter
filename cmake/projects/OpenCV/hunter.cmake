@@ -16,11 +16,33 @@ hunter_add_version(
     PACKAGE_NAME
     OpenCV
     VERSION
+    "4.0.0-p0"
+    URL
+    "https://github.com/hunter-packages/opencv/archive/v4.0.0-p0.tar.gz"
+    SHA1
+    90680ea3b971c2323e0049c48fa7867a1fd9f3fe
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    OpenCV
+    VERSION
     "3.4.3-p2"
     URL
     "https://github.com/hunter-packages/opencv/archive/v3.4.3-p2.tar.gz"
     SHA1
     bc038b7051c83c7a9002aae991c1358e14c7a7cc
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    OpenCV
+    VERSION
+    "3.4.3-p1"
+    URL
+    "https://github.com/hunter-packages/opencv/archive/v3.4.3-p1.tar.gz"
+    SHA1
+    3589a7f19fdaef200091231c4255c5e5bb70b217
 )
 
 hunter_add_version(
@@ -430,6 +452,7 @@ hunter_cmake_args(
     OpenCV
     CMAKE_ARGS
         BUILD_ANDROID_EXAMPLES=OFF
+        BUILD_JAVA=OFF
         BUILD_DOCS=OFF
         BUILD_EXAMPLES=OFF
         BUILD_PERF_TESTS=OFF
@@ -453,6 +476,10 @@ hunter_cmake_args(
         #  it might pick up the host version
         WITH_CUDA=OFF
         WITH_CUFFT=OFF
+        # Fix for https://travis-ci.org/xsacha/hunter/jobs/347083573
+        BUILD_opencv_dnn=OFF
+        # Fix for https://travis-ci.org/ingenue/hunter/builds/452039597
+        WITH_OPENEXR=OFF
 )
 
 # Pick a download scheme
